@@ -26,9 +26,9 @@ function Hero() {
 
       <div className="hero-visual">
         <img
-          src="/assets/banner-stack.png"
-          alt="A colorful layered illustration representing a development stack"
-        />
+  src={`${import.meta.env.BASE_URL}assets/banner-stack.png`}
+  alt="A colorful layered illustration representing a development stack"
+/>
       </div>
     </section>
   )

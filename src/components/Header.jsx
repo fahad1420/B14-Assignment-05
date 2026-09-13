@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const navLinks = [
-  { label: 'Home', href: '/' },
+  { label: 'Home', href: import.meta.env.BASE_URL },
   { label: 'Technologies', href: '#technologies' },
   { label: 'Projects', href: '#projects' },
   { label: 'About', href: '#about' },
@@ -28,8 +28,11 @@ function Header() {
           <span />
         </button>
 
-        <a className="brand" href="/" aria-label="Dev Stack home">
-          <img src="/assets/logo-text.png" alt="Dev Stack" />
+        <a className="brand" href={import.meta.env.BASE_URL} aria-label="Dev Stack home">
+          <img
+  src={`${import.meta.env.BASE_URL}assets/logo-text.png`}
+  alt="Dev Stack"
+/>
         </a>
 
         <nav className="desktop-nav" aria-label="Main navigation">

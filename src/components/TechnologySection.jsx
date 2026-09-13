@@ -10,7 +10,7 @@ function TechnologySection() {
   const [selectedTechnologies, setSelectedTechnologies] = useState([])
 
   useEffect(() => {
-    fetch('/data/technologies.json')
+    fetch(`${import.meta.env.BASE_URL}data/technologies.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not load the technology list.')
