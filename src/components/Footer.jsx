@@ -29,7 +29,9 @@ function Footer() {
     <footer className="site-footer" id="about">
       <div className="footer-main container">
         <div className="footer-brand">
-          <img src="/assets/logo-text.png" alt="Dev Stack" />
+          <img
+  src={`${import.meta.env.BASE_URL}assets/logo-text.png`}
+  alt="Dev Stack"/>
           <p>
             Curated tools, technologies, and resources for developers building
             modern software.
