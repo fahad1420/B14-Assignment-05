@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 :root {
   --brand-gradient: linear-gradient(90deg, #ff6b17 0%, #ed327e 52%, #8739ee 100%);
   --ink: #0f172a;
