@@ -1,5 +1,7 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx'
+import Hero from './components/Hero.jsx'
+import TechnologySection from './components/TechnologySection.jsx'
 
 function App() {
   return (
@@ -7,9 +9,11 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <TechnologySection />
       </main>
+      <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
